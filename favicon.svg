@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="c">
+      <rect width="32" height="32" rx="8"/>
+    </clipPath>
+    <radialGradient id="glow-purple" cx="78%" cy="0%" r="80%">
+      <stop offset="0" stop-color="#9146ff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#9146ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-blue" cx="0%" cy="100%" r="75%">
+      <stop offset="0" stop-color="#5865f2" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#5865f2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="32" height="32" fill="#100e18"/>
+    <rect width="32" height="32" fill="url(#glow-purple)"/>
+    <rect width="32" height="32" fill="url(#glow-blue)"/>
+    <path d="M23.5 13.05a7.8 7.8 0 1 0 0 5.9" fill="none" stroke="#f6f4ff" stroke-width="4.4" stroke-linecap="round"/>
+    <path d="M15 16h9.3" fill="none" stroke="#f6f4ff" stroke-width="4.4" stroke-linecap="round"/>
+  </g>
+</svg>
