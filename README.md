@@ -20,10 +20,10 @@ The font in `fonts/` is [Outfit](https://github.com/Outfitio/Outfit-Fonts), used
 
 ## Custom domain
 
-`godrecall.com` is not connected yet, so this repo has no `CNAME` file. When DNS is ready, add `godrecall.com` in the repository Pages settings (that writes the `CNAME`) and point DNS at GitHub Pages:
+The public site is [https://godrecall.com](https://godrecall.com). The root `CNAME` file contains `godrecall.com`. DNS:
 
 - Apex `godrecall.com`: A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
 - Apex `godrecall.com`: AAAA records `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
 - `www.godrecall.com`: CNAME to `zachkleinschmidt.github.io`
 
-Remove any default records the DNS host adds, and do not use a wildcard record. After both names resolve, GitHub Pages redirects between the apex domain and `www`. Confirm the IP addresses in [GitHub’s custom domain docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) before changing DNS. Update the canonical and Open Graph URLs in the HTML if the public site URL changes.
+GitHub Pages redirects between the apex domain and `www`. Canonical and Open Graph URLs use `https://godrecall.com`.
